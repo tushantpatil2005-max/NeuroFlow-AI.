@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-panel-bg: #0A0A0B;
+  --color-panel-border: #1F1F22;
+}
+
+@layer components {
+  .panel {
+    @apply bg-panel-bg border border-panel-border rounded-lg overflow-hidden;
+  }
+  .mono-label {
+    @apply font-mono text-[10px] uppercase tracking-widest text-zinc-500;
+  }
+}
